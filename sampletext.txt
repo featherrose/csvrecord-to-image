@@ -1,0 +1,9 @@
+<f"Flavor text's here.">
+
+<s+1 Speed><b, ><g+1 Guard><b, and your attack is Critical.>
+
+Before: If your attack is Critical, <r+0~2 Range>, <p+2 Power> and "Cleanup: Gain Advantage."
+
+Critical, Hit: Retreat 2 and <a+2 Armor>.
+
+After: Your attack is Critical <i(you know)>.

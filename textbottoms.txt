@@ -1,0 +1,12 @@
+\effect{}
+\effect{}
+\effect{}
+\effect{}
+\effect{}\passive{You may set this together with a Normal to form an EX Attack.}\effect{}
+\effect{}\power{+2 Power}\effect{ and }\guard{+5 Guard}\effect{}\par \effect{}\trigger{Now:}\effect{ Advance up to 1.}
+\effect{}
+\effect{Move your Air Support 1 space. Draw a card. Regain your action.}
+\effect{If your Air Support is in your space, Move up to 4.}
+\effect{}\trigger{Now:}\effect{ Strike.}\par \effect{}\trigger{Hit:}\effect{ }\power{+1 Power}\effect{ and Move up to 2.}
+\effect{}\range{+0\textsubscript{\~{}}1 Range}\effect{}\par \effect{}\trigger{Now:}\effect{ Retreat 1.}
+\effect{If the opponent is in your Air Support's space, deal 2 non-lethal damage and Push or Pull 1 or 2.}

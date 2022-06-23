@@ -1,0 +1,115 @@
+identify the current $template and $CardType
+
+I) does the specified $template have a value for the key $CardType (i.e., $template/$CardType)?
+
+if NO, log an ERROR: "unsupported CardType $CardType in Template $template"
+
+if YES:
+
+	A) loop through the backgroundkeys in $template/$CardType/background
+	for each backgroundkey:
+		1) retrieve the value as $backgroundlayer
+		2) if the userfield $backgroundkey is not empty or undefined, update $backgroundlayer to the userfield $backgroundkey
+		3) if $backgroundlayer is not empty or undefined, append $backgroundlayer to the layer stack
+
+	B) loop through the textboxkeys in $template/$CardType/textboxes
+	for each textboxkey:
+		1) retrieve the value of $textboxkey/TextValue as $TextValue
+		2) if the userfield ${textboxkey} is not empty or undefined, update $TextValue to the userfield ${textboxkey}
+		3) is $TextValue empty or undefined?
+		if YES, log a Warning: "supported textbox $textboxkey not supplied"
+		if NO:
+			a) retrieve the value of $textboxkey/TextBoxType as $TextBoxType
+			b) if the userfield ${key}Type is not empty or undefined, update $TextBoxType to the userfield ${key}Type
+			c) does the value of $TextBoxType exist within $textboxkey/TextBoxSupportedTypes (i.e., $template/$CardType/textboxes/$textboxkey/TextBoxSupportedTypes/$TextBoxType)?
+			if NO, log an ERROR: "unsupported TextBoxType $TextBoxType for CardType $CardType in Template $template"
+			if YES:
+				  i) retrieve the value of $textboxkey/TextBoxSupportedTypes/$TextBoxType/TextBoxSubtype as $TextBoxSubtype
+				 ii) if the userfield ${key}Subtype is not empty or undefined, update $TextBoxSubtype to the userfield ${key}Subtype
+				iii) does the value of $TextBoxSubtype exist within $textboxkey/TextBoxSupportedTypes/$TextBoxType/TypeSupportedSubtypes (i.e., $template/$CardType/textboxes/$textboxkey/TextBoxSupportedTypes/$TextBoxType/TextBoxSupportedSubtypes/$TextBoxSubtype)?
+				if NO, log an ERROR: "unsupported TextBoxSubtype $TextBoxSubtype of TextBoxType $TextBoxType for CardType $CardType in template $template"
+				if YES:
+					-A) retrieve all relevant variables from $textboxkey/*
+						TextValue
+						TextFont
+						TextParagraphSpacing
+						BoxWidth
+						BoxHeight
+						BoxOffsetX
+						BoxOffsetY
+						BoxRotation
+						BoxBlurSigma
+						BoxBlurRadius
+						BoxBlurDistance
+						BoxBlurOpacity
+						TextCriticalIconFile
+						TextCriticalIconTextScaling
+						TextCriticalIconWidth
+						TextCriticalIconHeight
+						"TextSupportedTags": {
+							"effect": {
+								"TextFontColor": "FFFFFF",
+								"TextOutlineColor": "000000",
+								"TextOutlineWidth": 0.6,
+								"TextOutlineDensity": 32
+							}
+						}
+					-B) update all relevant variables if they are defined in $textboxkey/TextBoxSupportedTypes/$TextBoxType/*
+					-C) update all relevant variables if they are defined in $textboxkey/TextBoxSupportedTypes/$TextBoxType/TextBoxSupportedSubtypes/$TextBoxSubtype/*
+					-D) update all relevant variables if there are corresponding user-defined values
+					-E) if $TypeFramePatch is not empty or undefined, append $TypeFramePatch to the layer stack
+					-F) if $Art_Over_{textboxkey}TypeFramePatch is not empty or undefined, append $Art_Over_{textboxkey}TypeFramePatch to the layer stack
+					-G) if $SubtypeFramePatch is not empty or undefined, append $SubtypeFramePatch to the layer stack
+					-H) if $Art_Over_{textboxkey}SubtypeFramePatch is not empty or undefined, append $Art_Over_SubtypeFramePatch to the layer stack
+					-I) create the text box image as $textboximagefile
+						(this has many substeps)
+						TODO: tag handling probably in here?
+					-J) append $textboximagefile to the layer stack
+					-K) if $Art_Over_{textboxkey} is not empty or undefined, append $Art_Over_{textboxkey} to the layer stack
+
+	C) loop through the statkeys in $template/$CardType/stats
+	for each statkey:
+		1) retrieve the value of $template/$CardType/stats/$statkey/StatValue as $StatValue
+		2) if the userfield ${statkey} is not empty or undefined, update $StatValue to the userfield ${statkey}
+		3) is $StatValue empty or undefined?
+		if YES, log a Warning: "supported stat $textboxkey not supplied"
+		if NO:
+			a) retrieve all relevant variables from $statkey/*
+				StatFramePatch
+				Art_Over_StatFramePatch
+				StatValue
+				Art_Over_StatValue
+				StatFontAlignment
+				StatFontFamily
+				StatFontWeight
+				StatFontStyle
+				StatFontCase
+				StatFontPointSize
+				StatOffsetX
+				StatOffsetY
+				StatRotation
+				StatFontColor
+				StatOutlineColor
+				StatOutlineWidth
+				StatBlurColor
+				StatBlurSigma
+				StatBlurRadius
+				StatBlurDistance
+				StatBlurOpacity
+			b) update all relevant variables if there are corresponding user-defined values
+			c) if $StatFramePatch is not empty or undefined, append $StatFramePatch to the layer stack
+			d) if $Art_Over_{statkey}FramePatch is not empty or undefined, update $Art_Over_StatFramePatch to the userfield $Art_Over_{statkey}FramePatch
+			e) if $Art_Over_StatFramePatch is not empty or undefined, append $Art_Over_StatFramePatch to the layer stack
+			f) create the stat image as $statimagefile
+				(this has many substeps)
+			g) append $statimagefile to the layer stack
+			h) if userfield $Art_Over_{statkey} is not empty or undefined, update $Art_Over_StatValue to the userfield $Art_Over_{statkey}
+			i) if $Art_Over_StatValue is not empty or undefined, append $Art_Over_StatValue to the layer stack
+
+	D) loop through the foregroundkeys in $template/$CardType/foreground
+	for each foregroundkey:
+		1) retrieve the value as $layer
+		2) if the userfield $foregroundkey is not empty or undefined, update $layer to the userfield $foregroundkey
+		3) if $layer is not empty or undefined, append $layer to the layer stack
+
+	E) draw the layer stack

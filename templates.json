@@ -1,0 +1,463 @@
+{
+	"shards_airship": {
+		"description": "Shards: Airship template. Suitable for most characters. Property of D (tirankin). Frame art by Blook Mook (twitter.com/BlookMook).",
+		"credits": "Shards (c) D (tirankin). Art by Blook Mook (twitter.com/BlookMook)",
+		"Special": {
+			"textboxes": {
+				"Primary": {
+					"TextValue": "\"Can you do an uppercut? Sure you can.\"",
+					"TextBoxType": "Attack",
+					"TextBoxSupportedTypes": {
+						"Attack": {
+							"TextBoxSubtype": "",
+							"TypeFramePatch": "",
+							"TypeSupportedSubtypes": {}
+						}
+					},
+					"TextFont": "FiraSans",
+					"TextParagraphSpacing": 5,
+					"BoxWidth": 520,
+					"BoxHeight": 147,
+					"BoxOffsetX": 5,
+					"BoxOffsetY": 208,
+					"BoxRotation": 0,
+					"BoxBlurSigma": 2,
+					"BoxBlurRadius": "",
+					"BoxBlurDistance": 1,
+					"BoxBlurOpacity": 0.9,
+					"TextCriticalIconFile": "./frames/shards-airship/critical.png",
+					"TextCriticalIconTextScaling": 0.04,
+					"TextCriticalIconWidth": 300,
+					"TextCriticalIconHeight": 300,
+					"TextSupportedTags": {
+						"effect": {
+							"TextFontColor": "FFFFFF",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 0.6,
+							"TextOutlineDensity": 32
+						},
+						"flavor": {
+							"TextFontColor": "c060000",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 1,
+							"TextOutlineDensity": 16
+						},
+						"passive": {
+							"TextFontColor": "ffffff",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 0.7,
+							"TextOutlineDensity": 16
+						},
+						"reminder": {
+							"TextFontColor": "ffffff",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 0.6,
+							"TextOutlineDensity": 16
+						},
+						"trigger": {
+							"TextFontColor": "ffffff",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 0.7,
+							"TextOutlineDensity": 16
+						},
+						"range": {
+							"TextFontColor": "00abea",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 1.2,
+							"TextOutlineDensity": 16
+						},
+						"power": {
+							"TextFontColor": "f54137",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 1.2,
+							"TextOutlineDensity": 16
+						},
+						"speed": {
+							"TextFontColor": "fff5a5",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 1.2,
+							"TextOutlineDensity": 16
+						},
+						"armor": {
+							"TextFontColor": "ae96c3",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 1.2,
+							"TextOutlineDensity": 16
+						},
+						"guard": {
+							"TextFontColor": "39ab55",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 1.2,
+							"TextOutlineDensity": 16
+						}
+					}
+				},
+				"Secondary": {
+					"TextValue": "(When you Exceed, flex.)",
+					"TextBoxType": "Force Boost",
+					"TextBoxSupportedTypes": {
+						"Force Boost": {
+							"TextBoxSubtype": "Instant",
+							"TypeFramePatch": "frames/shards-airship/airship-frame-forceboost.png",
+							"TypeSupportedSubtypes": {
+								"Continuous": {
+									"SubtypeFramePatch": "frames/shards-airship/airship-icon-continuous.png"
+								},
+								"Instant": {
+									"SubtypeFramePatch": ""
+								}
+							}
+						},
+						"Gauge Boost": {
+							"TextBoxSubtype": "Instant",
+							"TypeFramePatch": "frames/shards-airship/airship-frame-gaugeboost.png",
+							"TypeSupportedSubtypes": {
+								"Continuous": {
+									"SubtypeFramePatch": "frames/shards-airship/airship-icon-continuous.png"
+								},
+								"Instant": {
+									"SubtypeFramePatch": ""
+								}
+							}
+						},
+						"Overload": {
+							"TextBoxSubtype": "",
+							"TextValue": "<passive>You may set this with a Normal from hand to form an EX Attack.</>",
+							"TypeFramePatch": "frames/shards-airship/airship-frame-overload.png",
+							"SupportedSubtypes": {}
+						}
+					},
+					"TextFont": "FiraSans",
+					"TextParagraphSpacing": 5,
+					"BoxWidth": 536,
+					"BoxHeight": 132,
+					"BoxOffsetX": 5,
+					"BoxOffsetY": 412,
+					"BoxRotation": 0,
+					"BoxBlurSigma": 3,
+					"BoxBlurRadius": "",
+					"BoxBlurDistance": 1,
+					"BoxBlurOpacity": 0.9,
+					"TextCriticalIconFile": "./frames/shards-airship/critical.png",
+					"TextCriticalIconTextScaling": 0.04,
+					"TextCriticalIconWidth": 300,
+					"TextCriticalIconHeight": 300,
+					"TextSupportedTags": {
+						"effect": {
+							"TextFontColor": "FFFFFF",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 0.6,
+							"TextOutlineDensity": 32
+						},
+						"flavor": {
+							"TextFontColor": "c060000",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 1,
+							"TextOutlineDensity": 16
+						},
+						"passive": {
+							"TextFontColor": "ffffff",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 0.7,
+							"TextOutlineDensity": 16
+						},
+						"reminder": {
+							"TextFontColor": "ffffff",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 0.6,
+							"TextOutlineDensity": 16
+						},
+						"trigger": {
+							"TextFontColor": "ffffff",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 0.7,
+							"TextOutlineDensity": 16
+						},
+						"range": {
+							"TextFontColor": "00abea",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 1.2,
+							"TextOutlineDensity": 16
+						},
+						"power": {
+							"TextFontColor": "f54137",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 1.2,
+							"TextOutlineDensity": 16
+						},
+						"speed": {
+							"TextFontColor": "fff5a5",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 1.2,
+							"TextOutlineDensity": 16
+						},
+						"armor": {
+							"TextFontColor": "ae96c3",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 1.2,
+							"TextOutlineDensity": 16
+						},
+						"guard": {
+							"TextFontColor": "39ab55",
+							"TextOutlineColor": "000000",
+							"TextOutlineWidth": 1.2,
+							"TextOutlineDensity": 16
+						}
+					}
+				}
+			},
+			"stats": {
+				"Range": {
+					"StatFramePatch": "",
+					"Art_Over_StatFramePatch": "",
+					"StatValue": "N/A",
+					"Art_Over_StatValue": "",
+					"StatFontAlignment": "Center",
+					"StatFontFamily": "Barlow",
+					"StatFontWeight": "Medium",
+					"StatFontStyle": "Normal",
+					"StatFontCase": "",
+					"StatFontPointSize": 54,
+					"StatOffsetX": -270,
+					"StatOffsetY": -345,
+					"StatRotation": 0,
+					"StatFontColor": "#000000FF",
+					"StatOutlineColor": "#FFFFFFFF",
+					"StatOutlineWidth": 2,
+					"StatBlurColor": "#00ABEAFF",
+					"StatBlurSigma": 3,
+					"StatBlurRadius": 9,
+					"StatBlurDistance": 1,
+					"StatBlurOpacity": 0.3
+				},
+				"Power": {
+					"StatFramePatch": "",
+					"Art_Over_StatFramePatch": "",
+					"StatValue": "N/A",
+					"Art_Over_StatValue": "",
+					"StatFontAlignment": "Center",
+					"StatFontFamily": "Barlow",
+					"StatFontWeight": "Medium",
+					"StatFontStyle": "Normal",
+					"StatFontCase": "",
+					"StatFontPointSize": 54,
+					"StatOffsetX": -270,
+					"StatOffsetY": -235,
+					"StatRotation": 0,
+					"StatFontColor": "#000000FF",
+					"StatOutlineColor": "#FFFFFFFF",
+					"StatOutlineWidth": 2,
+					"StatBlurColor": "#F54137FF",
+					"StatBlurSigma": 3,
+					"StatBlurRadius": 9,
+					"StatBlurDistance": 1,
+					"StatBlurOpacity": 0.3
+				},
+				"Speed": {
+					"StatFramePatch": "",
+					"Art_Over_StatFramePatch": "",
+					"StatValue": "0",
+					"Art_Over_StatValue": "",
+					"StatFontAlignment": "Center",
+					"StatFontFamily": "Barlow",
+					"StatFontWeight": "Medium",
+					"StatFontStyle": "Normal",
+					"StatFontCase": "",
+					"StatFontPointSize": 54,
+					"StatOffsetX": -280,
+					"StatOffsetY": -130,
+					"StatRotation": 0,
+					"StatFontColor": "#000000FF",
+					"StatOutlineColor": "#FFFFFFFF",
+					"StatOutlineWidth": 2,
+					"StatBlurColor": "#FFF5A5FF",
+					"StatBlurSigma": 3,
+					"StatBlurRadius": 9,
+					"StatBlurDistance": 1,
+					"StatBlurOpacity": 0.3
+				},
+				"Armor": {
+					"StatFramePatch": "frames/shards-airship/airship-frame-armor.png",
+					"Art_Over_StatFramePatch": "",
+					"StatValue": "",
+					"Art_Over_StatValue": "",
+					"StatFontAlignment": "Center",
+					"StatFontFamily": "Barlow",
+					"StatFontWeight": "Medium",
+					"StatFontStyle": "Normal",
+					"StatFontCase": "",
+					"StatFontPointSize": 54,
+					"StatOffsetX": -265,
+					"StatOffsetY": -45,
+					"StatRotation": 0,
+					"StatFontColor": "#000000FF",
+					"StatOutlineColor": "#FFFFFFFF",
+					"StatOutlineWidth": 2,
+					"StatBlurColor": "#AE96C3FF",
+					"StatBlurSigma": 3,
+					"StatBlurRadius": 9,
+					"StatBlurDistance": 1,
+					"StatBlurOpacity": 0.3
+				},
+				"Guard": {
+					"StatFramePatch": "frames/shards-airship/airship-frame-guard.png",
+					"Art_Over_StatFramePatch": "",
+					"StatValue": "",
+					"Art_Over_StatValue": "",
+					"StatFontAlignment": "Center",
+					"StatFontFamily": "Barlow",
+					"StatFontWeight": "Medium",
+					"StatFontStyle": "Normal",
+					"StatFontCase": "",
+					"StatFontPointSize": 54,
+					"StatOffsetX": -260,
+					"StatOffsetY": 55,
+					"StatRotation": 0,
+					"StatFontColor": "#000000FF",
+					"StatOutlineColor": "#FFFFFFFF",
+					"StatOutlineWidth": 2,
+					"StatBlurColor": "#39AB55FF",
+					"StatBlurSigma": 3,
+					"StatBlurRadius": 9,
+					"StatBlurDistance": 1,
+					"StatBlurOpacity": 0.3
+				},
+				"Cost": {
+					"StatFramePatch": "frames/shards-airship/airship-icon-forcecost.png",
+					"Art_Over_StatFramePatch": "",
+					"StatValue": "",
+					"Art_Over_StatValue": "",
+					"StatFontAlignment": "Center",
+					"StatFontFamily": "Barlow",
+					"StatFontWeight": "Medium",
+					"StatFontStyle": "Normal",
+					"StatFontCase": "",
+					"StatFontPointSize": 64,
+					"StatOffsetX": -320,
+					"StatOffsetY": -445,
+					"StatRotation": 0,
+					"StatFontColor": "#000000FF",
+					"StatOutlineColor": "#FFFFFFFF",
+					"StatOutlineWidth": 2,
+					"StatBlurColor": "#FFFFFFFF",
+					"StatBlurSigma": 3,
+					"StatBlurRadius": 9,
+					"StatBlurDistance": 1,
+					"StatBlurOpacity": 0.3
+				},
+				"SecondaryCost": {
+					"StatFramePatch": "",
+					"Art_Over_StatFramePatch": "",
+					"StatValue": "0",
+					"Art_Over_StatValue": "",
+					"StatFontAlignment": "Center",
+					"StatFontFamily": "Barlow",
+					"StatFontWeight": "Medium",
+					"StatFontStyle": "Normal",
+					"StatFontCase": "",
+					"StatFontPointSize": 54,
+					"StatOffsetX": -315,
+					"StatOffsetY": 428,
+					"StatRotation": 0,
+					"StatFontColor": "#000000FF",
+					"StatOutlineColor": "#FFFFFFFF",
+					"StatOutlineWidth": 2,
+					"StatBlurColor": "#00ABEAFF",
+					"StatBlurSigma": 3,
+					"StatBlurRadius": 9,
+					"StatBlurDistance": 1,
+					"StatBlurOpacity": 0.3
+				},
+				"Subtitle": {
+					"StatFramePatch": "",
+					"Art_Over_StatFramePatch": "",
+					"StatValue": "",
+					"Art_Over_StatValue": "",
+					"StatFontAlignment": "NorthWest",
+					"StatFontFamily": "WC Mano Negra Bta",
+					"StatFontWeight": "Medium",
+					"StatFontStyle": "Normal",
+					"StatFontCase": "",
+					"StatFontPointSize": 18,
+					"StatOffsetX": 75,
+					"StatOffsetY": 66,
+					"StatRotation": 0,
+					"StatFontColor": "#000000FF",
+					"StatOutlineColor": "#FFFFFFFF",
+					"StatOutlineWidth": 2,
+					"StatBlurColor": "#00ABEAFF",
+					"StatBlurSigma": 3,
+					"StatBlurRadius": 9,
+					"StatBlurDistance": 1,
+					"StatBlurOpacity": 0.3
+				},
+				"CardName": {
+					"StatFramePatch": "",
+					"Art_Over_StatFramePatch": "",
+					"StatValue": "(That Card)",
+					"Art_Over_StatValue": "",
+					"StatFontAlignment": "NorthWest",
+					"StatFontFamily": "WC Mano Negra Bta",
+					"StatFontWeight": "Medium",
+					"StatFontStyle": "Normal",
+					"StatFontCase": "UPPERCASE",
+					"StatFontPointSize": 68,
+					"StatOffsetX": 75,
+					"StatOffsetY": 33,
+					"StatRotation": 0,
+					"StatFontColor": "#FFFFFFFF",
+					"StatOutlineColor": "#000000FF",
+					"StatOutlineWidth": 3,
+					"StatBlurColor": "#FFFFFFFF",
+					"StatBlurSigma": 3,
+					"StatBlurRadius": 3,
+					"StatBlurDistance": 1,
+					"StatBlurOpacity": 0.3
+				},
+				"SecondaryName": {
+					"StatFramePatch": "",
+					"Art_Over_StatFramePatch": "",
+					"StatValue": "(Boost Title)",
+					"Art_Over_StatValue": "",
+					"StatFontAlignment": "SouthWest",
+					"StatFontFamily": "Barlow",
+					"StatFontWeight": "Medium",
+					"StatFontStyle": "Normal",
+					"StatFontCase": "UPPERCASE",
+					"StatFontPointSize": 32,
+					"StatOffsetX": 95,
+					"StatOffsetY": 160,
+					"StatRotation": 0,
+					"StatFontColor": "#000000FF",
+					"StatOutlineColor": "#FFFFFFFF",
+					"StatOutlineWidth": 3,
+					"StatBlurColor": "#00ABEAFF",
+					"StatBlurSigma": 3,
+					"StatBlurRadius": 9,
+					"StatBlurDistance": 1,
+					"StatBlurOpacity": 0.3
+				}
+			},
+			"background": {
+				"Background": "",
+				"Frame_Over_Background": "",
+				"Art": "",
+				"Frame_Over_Art": "frames/shards-airship/airship-frame.png"
+			},
+			"decorations": {
+				"OwnerMark": {
+					"DecorationFramePatch": "",
+					"DecorationValue": "",
+					"DecorationFramePlate": "",
+					"OffsetX": 320,
+					"OffsetY": -445,
+					"Width": 100,
+					"Height": 100
+				}
+			},
+			"foreground": {
+				"Art_Over_All": ""
+			}
+		}
+	}
+}
